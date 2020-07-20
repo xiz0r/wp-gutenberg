@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "components": "./components",
+          "hoc": "./hoc",
+          "interfaces": "./interfaces",
+          "pages": "./pages",
+          "types": "./types"
+        },
+        "cwd": "babelrc"
+      }
+    ]
+  ],
+  "presets": ["next/babel", "@zeit/next-typescript/babel"],
+  "ignore": []
+}
